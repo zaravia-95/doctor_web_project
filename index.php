@@ -79,6 +79,7 @@
 		<!-- Main Start -->
 		<main id="dc-main" class="dc-main dc-haslayout">
 			<!-- Search Section Start -->
+			 <h1>hello</h1>
 			<section class="dc-searchholder dc-haslayout">
 				<div class="container">
 					<div class="row">
