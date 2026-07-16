@@ -108,61 +108,6 @@ include("master-template/header.php")
 		<!-- breadcrumbarea End -->
 		<!-- Main Start -->
 		<main id="dc-main" class="dc-main dc-haslayout">
-			<!-- About Welcome Start -->
-			<section class="dc-main-section dc-haslayout">
-				<div class="container">
-					<div class="row">
-						<div class="dc-aboutstep">
-							<div class="col-xs-12 col-sm-12 col-md-10 push-md-1 col-lg-10 push-lg-1 float-left">
-								<div class="dc-sectionhead dc-sectionheadvtwo">
-									<div class="dc-sectiontitle">
-										<h2>Make a Smart Choice<span>Take a Right Step For Your Life</span></h2>
-									</div>
-									<div class="dc-description">
-										<p>Lorem ipsum dolor ametei consectetur adipisicing eliteiuim sete eiusmod tempor incididunt ut labore etnalom dolore magna aliqua udiminimate veniam quis norud exercitation ullamco.</p>
-									</div>
-								</div>
-							</div>
-							<div class="dc-welcome-holder">
-								<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 float-left">
-									<div class="dc-welcomecontent">
-										<figure class="dc-welcomeimg"><img src="doclist/images/welcome/img-01.jpg" alt="img description"></figure>
-										<div class="dc-title">
-											<h3><span>Search Best Online</span>Professional</h3>
-										</div>
-										<div class="dc-description">
-											<p>Amet consectetur adipisicing eliteiuim sete eiuode tempor incididunt utoreas etnalom dolore maena aliqua udiminimate veniam.</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 float-left">
-									<div class="dc-welcomecontent">
-										<figure class="dc-welcomeimg"><img src="doclist/images/welcome/img-02.jpg" alt="img description"></figure>
-										<div class="dc-title">
-											<h3><span>Get Instant</span>Appointment</h3>
-										</div>
-										<div class="dc-description">
-											<p>Amet consectetur adipisicing eliteiuim sete eiuode tempor incididunt utoreas etnalom dolore maena aliqua udiminimate veniam.</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 float-left">
-									<div class="dc-welcomecontent">
-										<figure class="dc-welcomeimg"><img src="doclist/images/welcome/img-03.jpg" alt="img description"></figure>
-										<div class="dc-title">
-											<h3><span>Leave Your</span>Feedback</h3>
-										</div>
-										<div class="dc-description">
-											<p>Amet consectetur adipisicing eliteiuim sete eiuode tempor incididunt utoreas etnalom dolore maena aliqua udiminimate veniam.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- About Welcome End !-->
 			<!-- Works Section Start -->
 			<section class="dc-haslayout">
 				<div class="dc-haslayout dc-bgcolor dc-main-section dc-workholder">
@@ -191,7 +136,7 @@ include("master-template/header.php")
 										</figure>
 									</div>
 									<div class="dc-title">
-										<span>SGet Instant</span>
+										<span>Get Instant</span>
 										<h3><a href="javascript:void(0);">Appointment</a></h3>
 									</div>
 								</div>
@@ -221,10 +166,10 @@ include("master-template/header.php")
 						<div class="col-xs-12 col-sm-12 col-md-8 push-md-2 col-lg-8 push-lg-2">
 							<div class="dc-sectionhead dc-text-center">
 								<div class="dc-sectiontitle">
-									<h2><span>Talent Behind Curtain</span>Meet <em>Our Team</em></h2>
+									<h2>Meet <em>Our Team</em></h2>
 								</div>
 								<div class="dc-description">
-									<p>Lorem ipsum dolor amet consectetur adipisicing eliteiuim sete eiusmod tempor incididunt ut labore etnalom dolore magna aliqua udiminimate veniam quis norud.</p>
+									<p>Our experienced doctors are committed to providing compassionate, high-quality healthcare for every patient.</p>
 								</div>
 							</div>
 						</div>
@@ -396,6 +341,42 @@ include("master-template/header.php")
 				</div>
 			</section>
 			<!-- Emerging Clients End -->
+			 <!-- Bring Care Start -->
+			<section class="dc-haslayout dc-main-section dc-sectionbg">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 align-self-center">
+							<div class="dc-bringcarecontent">
+								<div class="dc-sectionhead dc-sectionheadvtwo">
+									<div class="dc-sectiontitle">
+										<h2>Bring Care to Your<span>Home With One Click</span></h2>
+									</div>
+									<div class="dc-description">
+										<p>we provide advanced medical treatment with experienced doctors and modern healthcare facilities.</p>
+									</div>
+								</div>
+								<div class="dc-btnarea">
+									<a href="javascript:void(0);" class="dc-btn">About Us</a>
+									<!--<a href="javascript:void(0);" class="dc-btn dc-btnactive">Contact</a>-->
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6">
+							<div class="dc-bringimg-holder">
+								<figure class="dc-doccareimg">
+									<img src="doclist/images/doc-imgs/img-01.png" alt="img description">
+									<figcaption>
+										<div class="dc-doccarecontent">
+											<h3><em>Greetings &amp; Welcome </em>Dr. Tyrone Grindle</h3>
+										</div>
+									</figcaption>
+								</figure>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Bring Care End -->
 		</main>
 		<!-- Main End -->
 <?php

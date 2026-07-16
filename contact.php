@@ -99,6 +99,7 @@
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 						<ol class="dc-breadcrumb">
 							<li><a href="index-2.html">Home</a></li>
+							
 							<li> Contact</li>
 						</ol>
 					</div>
@@ -123,7 +124,7 @@
 								<ul class="dc-formcontactus">
 									<li><address><i class="lnr lnr-location"></i> 123 New Street, Melbourne location  Australia 54214</address></li>
 									<li><a href="javascript:void(0)"><i class="lnr lnr-envelope"></i> info@domainurl.com</a></li>
-									<li><span><i class="lnr lnr-phone-handset"></i> (0800) 1234 567891</span></li>
+									<li><span><i class="lnr lnr-phone-handset"></i> +1(646)5554099</span></li>
 								</ul>
 							</div>
 						</div>
@@ -168,6 +169,6 @@
 			<!-- Emerging Clients End -->
 		</main>
 		<!-- Main End -->
-<?php
+		<?php
     include("master-template/footer.php");
 ?>

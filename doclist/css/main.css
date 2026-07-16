@@ -1712,7 +1712,7 @@ body.dc-userlogin .dc-loginarea{display: none;}
 }
 .dc-advancedsearch{
 	float: left;
-	width: 100% !important;
+	width: 60%;
 	background: #fff;
 	border-radius: 4px;
 	-webkit-box-shadow: 0 0 20px 0 rgba(165,165,165,0.5);
@@ -6631,3 +6631,5 @@ ul{list-style-type: none;}
 	vertical-align: middle;
 }
 .dc-articles-mt > div:nth-child(n+3){margin-top:30px; }
+
+

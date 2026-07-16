@@ -1,5 +1,6 @@
 <?php
     include("master-template/header.php");
+	include_once('php/connection.php');
 ?>
 		
         <!-- Home Slider Start -->
@@ -15,7 +16,7 @@
 						<div class="carousel-item active" id="carousel-item-1">
 							<div class="d-flex justify-content-center dc-craousel-content">
 								<div class="mx-auto">
-									<img class="d-block dc-bannerimg" src="doclist/images/slider/img-01.png" alt="First slide">
+									<img class="d-block dc-bannerimg" src="doclist/images/slider/img-03.png" alt="First slide">
 									<div class="dc-bannercontent dc-bannercotent-craousel" >
 										<div class="dc-content-carousel">
 											<div class="dc-num"></div>
@@ -49,7 +50,7 @@
 						<div class="carousel-item" id="carousel-item-3">
 							<div class="d-flex justify-content-center dc-craousel-content">
 								<div class="mx-auto">
-									<img class="d-block dc-bannerimg" src="doclist/images/slider/img-03.png" alt="Third slide">
+									<img class="d-block dc-bannerimg" src="doclist/images/slider/img-01.png" alt="Third slide">
 									<div class="dc-bannercontent dc-bannercotent-craousel" >
 										<div class="dc-content-carousel">
 											<div class="dc-num"></div>
@@ -76,6 +77,44 @@
 			</div>
 		</div>
 		<!-- Home Slider End -->
+        <!-- Welcome Section -->
+
+
+<section class="dc-haslayout dc-main-section">
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <div class="col-md-8 text-center">
+
+                <h1>Welcome to City Hospital</h1>
+
+                <p class="mt-3">
+                    We are committed to providing quality healthcare services with experienced doctors,
+                    modern facilities, and easy online appointment booking.
+                </p>
+
+                <img src="doclist/images/doc-imgs/img-01.png"
+                     class="img-fluid mt-4"
+                     alt="Doctor">
+
+                <div class="mt-4">
+                    <a href="doctors.php" class="dc-btn">
+                        View Doctors
+                    </a>
+
+                    <a href="appointment.php" class="dc-btn dc-btnactive">
+                        Book Appointment
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
 		<!-- Main Start -->
 		<main id="dc-main" class="dc-main dc-haslayout">
 			<!-- Search Section Start -->
@@ -83,7 +122,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-							<div class="dc-searchform-holder">
+							<!---<div class="dc-searchform-holder">
 								<div class="dc-advancedsearch">
 									<div class="dc-title">
 										<h2>Start Your Search</h2>
@@ -111,7 +150,7 @@
 											</div>
 										</fieldset>
 									</form>
-								</div>
+								</div>--->
 								
 							</div>
 						</div>
@@ -163,7 +202,7 @@
 			</section>
 			<!-- Search Section End -->
 			<!-- Bring Care Start -->
-			<section class="dc-haslayout dc-main-section dc-sectionbg">
+			<!--<section class="dc-haslayout dc-main-section dc-sectionbg">
 				<div class="container">
 					<div class="row">
 						<div class="col-12 col-sm-12 col-md-12 col-lg-6 align-self-center">
@@ -196,7 +235,7 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section>-->
 			<!-- Bring Care End -->
 			<!-- Works Section Start -->
 			<section class="dc-haslayout">
@@ -209,7 +248,7 @@
 										<h2><span>We Made It Simple</span>How It <em>Works?</em></h2>
 									</div>
 									<div class="dc-description">
-										<p>Lorem ipsum dolor amet consectetur adipisicing eliteiuim sete eiusmod tempor incididunt ut labore etnalom dolore magna aliqua udiminimate veniam quis norud.</p>
+										<p>Find the right doctor, book your appointment quickly, and get the care you need without any trouble.</p>
 									</div>
 								</div>
 							</div>
@@ -240,7 +279,7 @@
 										</figure>
 									</div>
 									<div class="dc-title">
-										<span>SGet Instant</span>
+										<span>Get Instant</span>
 										<h3><a href="javascript:void(0);">Appointment</a></h3>
 									</div>
 								</div>
@@ -312,8 +351,8 @@
 											<div class="dc-docpostcontent">
 												<a href="javascript:void(0);" class="dc-like"><i class="fa fa-heart"></i></a>
 												<div class="dc-title">
-													<a href="javascript:void(0)" class="dc-docstatus">Neurosurgeon</a>
-													<h3><a href="javascript:void(0);">Dr. Carmelo G. lock </a> <i class="fa fa-award dc-awardtooltip"><em>Medical Registration Verified</em></i> <i class="fa fa-check-circle dc-awardtooltip"><em>Medical Registration Verified</em></i></h3>
+													<a href="javascript:void(0)" class="dc-docstatus">Cardiologist</a>
+													<h3><a href="javascript:void(0);">Dr. William Lock </a> <i class="fa fa-award dc-awardtooltip"><em>Medical Registration Verified</em></i> <i class="fa fa-check-circle dc-awardtooltip"><em>Medical Registration Verified</em></i></h3>
 													<ul class="dc-docinfo">
 														<li>
 															<em>MBBS, MCPS, MSc (Immunology)</em>
@@ -334,7 +373,7 @@
 									<div class="item">
 										<div class="dc-docpostholder">
 											<figure class="dc-docpostimg">
-												<img src="doclist/images/doctors/img-04.jpg" alt="img description">
+												<img src="./doclist/images/doctors/img-05.jpg" alt="img description">
 												<figcaption>
 													<span class="dc-featuredtag"><i class="fa fa-bolt"></i></span>
 												</figcaption>
@@ -342,7 +381,7 @@
 											<div class="dc-docpostcontent">
 												<a href="javascript:void(0);" class="dc-like"><i class="fa fa-heart"></i></a>
 												<div class="dc-title">
-													<a href="javascript:void(0)" class="dc-docstatus">Neurosurgeon</a>
+													<a href="javascript:void(0)" class="dc-docstatus">Pediatrician</a>
 													<h3><a href="javascript:void(0);">Dr. Maryland Nicol lock</a> <i class="fa fa-award dc-awardtooltip"><em>Medical Registration Verified</em></i> <i class="fa fa-check-circle dc-awardtooltip"><em>Medical Registration Verified</em></i></h3>
 													<ul class="dc-docinfo">
 														<li>
@@ -372,8 +411,8 @@
 											<div class="dc-docpostcontent">
 												<a href="javascript:void(0);" class="dc-like"><i class="fa fa-heart"></i></a>
 												<div class="dc-title">
-													<a href="javascript:void(0)" class="dc-docstatus">Neurosurgeon</a>
-													<h3><a href="javascript:void(0);">Dr. Arron Benning</a> <i class="fa fa-award dc-awardtooltip"><em>Medical Registration Verified</em></i> <i class="fa fa-check-circle dc-awardtooltip"><em>Medical Registration Verified</em></i></h3>
+													<a href="javascript:void(0)" class="dc-docstatus">Dentist</a>
+													<h3><a href="javascript:void(0);">Dr. Daniel Benning</a> <i class="fa fa-award dc-awardtooltip"><em>Medical Registration Verified</em></i> <i class="fa fa-check-circle dc-awardtooltip"><em>Medical Registration Verified</em></i></h3>
 													<ul class="dc-docinfo">
 														<li>
 															<em>MBBS, MCPS, MSc (Immunology)</em>
@@ -394,7 +433,7 @@
 									<div class="item">
 										<div class="dc-docpostholder">
 											<figure class="dc-docpostimg">
-												<img src="doclist/images/doctors/img-05.jpg" alt="img description">
+												<img src="doclist/images/doctors/doctor4.jpg" alt="img description">
 												<figcaption>
 													<span class="dc-featuredtag"><i class="fa fa-bolt"></i></span>
 												</figcaption>
@@ -402,7 +441,7 @@
 											<div class="dc-docpostcontent">
 												<a href="javascript:void(0);" class="dc-like"><i class="fa fa-heart"></i></a>
 												<div class="dc-title">
-													<a href="javascript:void(0)" class="dc-docstatus">Neurosurgeon</a>
+													<a href="javascript:void(0)" class="dc-docstatus">Oncologist</a>
 													<h3><a href="javascript:void(0);">Dr. Nubia Riccardi</a> <i class="fa fa-award dc-awardtooltip"><em>Medical Registration Verified</em></i> <i class="fa fa-check-circle dc-awardtooltip"><em>Medical Registration Verified</em></i></h3>
 													<ul class="dc-docinfo">
 														<li>
@@ -432,8 +471,8 @@
 											<div class="dc-docpostcontent">
 												<a href="javascript:void(0);" class="dc-like"><i class="fa fa-heart"></i></a>
 												<div class="dc-title">
-													<a href="javascript:void(0)" class="dc-docstatus">Neurosurgeon</a>
-													<h3><a href="javascript:void(0);">Dr. Tinisha Amenta</a> <i class="fa fa-award dc-awardtooltip"><em>Medical Registration Verified</em></i> <i class="fa fa-check-circle dc-awardtooltip"><em>Medical Registration Verified</em></i></h3>
+													<a href="javascript:void(0)" class="dc-docstatus">Neurologist</a>
+													<h3><a href="javascript:void(0);">Dr. Stella Nicolosi</a> <i class="fa fa-award dc-awardtooltip"><em>Medical Registration Verified</em></i> <i class="fa fa-check-circle dc-awardtooltip"><em>Medical Registration Verified</em></i></h3>
 													<ul class="dc-docinfo">
 														<li>
 															<em>MBBS, MCPS, MSc (Immunology)</em>
@@ -462,8 +501,8 @@
 											<div class="dc-docpostcontent">
 												<a href="javascript:void(0);" class="dc-like"><i class="fa fa-heart"></i></a>
 												<div class="dc-title">
-													<a href="javascript:void(0)" class="dc-docstatus">Neurosurgeon</a>
-													<h3><a href="javascript:void(0);">Dr. Tinisha Amenta</a> <i class="fa fa-award dc-awardtooltip"><em>Medical Registration Verified</em></i> <i class="fa fa-check-circle dc-awardtooltip"><em>Medical Registration Verified</em></i></h3>
+													<a href="javascript:void(0)" class="dc-docstatus">Plastic surgeon</a>
+													<h3><a href="javascript:void(0);">Dr. Conrad Harry</a> <i class="fa fa-award dc-awardtooltip"><em>Medical Registration Verified</em></i> <i class="fa fa-check-circle dc-awardtooltip"><em>Medical Registration Verified</em></i></h3>
 													<ul class="dc-docinfo">
 														<li>
 															<em>MBBS, MCPS, MSc (Immunology)</em>
@@ -492,7 +531,7 @@
 											<div class="dc-docpostcontent">
 												<a href="javascript:void(0);" class="dc-like"><i class="fa fa-heart"></i></a>
 												<div class="dc-title">
-													<a href="javascript:void(0)" class="dc-docstatus">Neurosurgeon</a>
+													<a href="javascript:void(0)" class="dc-docstatus">Orthopedic Surgeon</a>
 													<h3><a href="javascript:void(0);">Dr. Carmelo G. lock </a> <i class="fa fa-award dc-awardtooltip"><em>Medical Registration Verified</em></i> <i class="fa fa-check-circle dc-awardtooltip"><em>Medical Registration Verified</em></i></h3>
 													<ul class="dc-docinfo">
 														<li>
@@ -514,7 +553,7 @@
 									<div class="item">
 										<div class="dc-docpostholder">
 											<figure class="dc-docpostimg">
-												<img src="doclist/images/doctors/img-04.jpg" alt="img description">
+												<img src="doclist/images/doctors" alt="img description">
 												<figcaption>
 													<span class="dc-featuredtag"><i class="fa fa-bolt"></i></span>
 												</figcaption>
@@ -522,8 +561,8 @@
 											<div class="dc-docpostcontent">
 												<a href="javascript:void(0);" class="dc-like"><i class="fa fa-heart"></i></a>
 												<div class="dc-title">
-													<a href="javascript:void(0)" class="dc-docstatus">Neurosurgeon</a>
-													<h3><a href="javascript:void(0);">Dr. Maryland Nicol lock</a> <i class="fa fa-award dc-awardtooltip"><em>Medical Registration Verified</em></i> <i class="fa fa-check-circle dc-awardtooltip"><em>Medical Registration Verified</em></i></h3>
+													<a href="javascript:void(0)" class="dc-docstatus">Pulmonologist</a>
+													<h3><a href="javascript:void(0);">Dr. John Nicol </a> <i class="fa fa-award dc-awardtooltip"><em>Medical Registration Verified</em></i> <i class="fa fa-check-circle dc-awardtooltip"><em>Medical Registration Verified</em></i></h3>
 													<ul class="dc-docinfo">
 														<li>
 															<em>Clin Immn (Euro), FCPP</em>
@@ -552,8 +591,8 @@
 											<div class="dc-docpostcontent">
 												<a href="javascript:void(0);" class="dc-like"><i class="fa fa-heart"></i></a>
 												<div class="dc-title">
-													<a href="javascript:void(0)" class="dc-docstatus">Neurosurgeon</a>
-													<h3><a href="javascript:void(0);">Dr. Arron Benning</a> <i class="fa fa-award dc-awardtooltip"><em>Medical Registration Verified</em></i> <i class="fa fa-check-circle dc-awardtooltip"><em>Medical Registration Verified</em></i></h3>
+													<a href="javascript:void(0)" class="dc-docstatus">Anesthesiologist</a>
+													<h3><a href="javascript:void(0);">Dr. Arron </a> <i class="fa fa-award dc-awardtooltip"><em>Medical Registration Verified</em></i> <i class="fa fa-check-circle dc-awardtooltip"><em>Medical Registration Verified</em></i></h3>
 													<ul class="dc-docinfo">
 														<li>
 															<em>MBBS, MCPS, MSc (Immunology)</em>
@@ -574,7 +613,7 @@
 									<div class="item">
 										<div class="dc-docpostholder">
 											<figure class="dc-docpostimg">
-												<img src="doclist/images/doctors/img-05.jpg" alt="img description">
+												<img src="doclist/images/doctors" alt="img description">
 												<figcaption>
 													<span class="dc-featuredtag"><i class="fa fa-bolt"></i></span>
 												</figcaption>
@@ -582,8 +621,8 @@
 											<div class="dc-docpostcontent">
 												<a href="javascript:void(0);" class="dc-like"><i class="fa fa-heart"></i></a>
 												<div class="dc-title">
-													<a href="javascript:void(0)" class="dc-docstatus">Neurosurgeon</a>
-													<h3><a href="javascript:void(0);">Dr. Nubia Riccardi</a> <i class="fa fa-award dc-awardtooltip"><em>Medical Registration Verified</em></i> <i class="fa fa-check-circle dc-awardtooltip"><em>Medical Registration Verified</em></i></h3>
+													<a href="javascript:void(0)" class="dc-docstatus">Dermatologist</a>
+													<h3><a href="javascript:void(0);">Dr. Sarah Ali</a> <i class="fa fa-award dc-awardtooltip"><em>Medical Registration Verified</em></i> <i class="fa fa-check-circle dc-awardtooltip"><em>Medical Registration Verified</em></i></h3>
 													<ul class="dc-docinfo">
 														<li>
 															<em>MBBS, MCPS, MSc (Immunology)</em>
@@ -612,8 +651,8 @@
 											<div class="dc-docpostcontent">
 												<a href="javascript:void(0);" class="dc-like"><i class="fa fa-heart"></i></a>
 												<div class="dc-title">
-													<a href="javascript:void(0)" class="dc-docstatus">Neurosurgeon</a>
-													<h3><a href="javascript:void(0);">Dr. Tinisha Amenta</a> <i class="fa fa-award dc-awardtooltip"><em>Medical Registration Verified</em></i> <i class="fa fa-check-circle dc-awardtooltip"><em>Medical Registration Verified</em></i></h3>
+													<a href="javascript:void(0)" class="dc-docstatus">General Physician</a>
+													<h3><a href="javascript:void(0);">Dr. Lisa</a> <i class="fa fa-award dc-awardtooltip"><em>Medical Registration Verified</em></i> <i class="fa fa-check-circle dc-awardtooltip"><em>Medical Registration Verified</em></i></h3>
 													<ul class="dc-docinfo">
 														<li>
 															<em>MBBS, MCPS, MSc (Immunology)</em>
@@ -649,7 +688,8 @@
 									<h2><span>Read Professional Articles</span>Latest <em>Articles</em></h2>
 								</div>
 								<div class="dc-description">
-									<p>Lorem ipsum dolor amet consectetur adipisicing eliteiuim sete eiusmod tempor incididunt ut labore etnalom dolore magna aliqua udiminimate veniam quis norud.</p>
+									<p>Explore our latest health articles, expert medical advice,
+									and wellness tips to help you and your family stay healthy, informed, and confident about your healthcare decisions.</p>
 								</div>
 							</div>
 						</div>
