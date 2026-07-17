@@ -193,6 +193,7 @@
 		</footer>
 		<!-- Footer End -->
 	</div>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<script src="doclist/js/vendor/jquery-3.3.1.js"></script>
 	<script src="doclist/js/vendor/jquery-library.js"></script>
 	<script src="doclist/js/vendor/bootstrap.min.js"></script>
@@ -209,5 +210,25 @@
 	<script src="doclist/js/jRate.js"></script>
 	<script src="doclist/js/main.js"></script>
 </body>
-
+<?php
+if($_GET["msg"] == "failed")
+{
+	echo "<script>
+			Swal.fire({
+  title: 'Incorrect Details!',
+  text: 'Login Failed!',
+  icon: 'error'
+});
+	</script>";
+}
+elseif($_GET["msg"] == "success")
+{
+	echo "<script>
+			Swal.fire({
+  title: 'Login Successfully!',
+  icon: 'success'
+});
+	</script>";
+}
+?>
 </html>

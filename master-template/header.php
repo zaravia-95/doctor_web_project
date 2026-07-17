@@ -1,4 +1,7 @@
 
+<?php 
+	include("php/connection.php");
+?>
 <!doctype html>
 <html class="no-js" lang="en"> <!--<![endif]-->
 
@@ -29,16 +32,17 @@
 	<link rel="stylesheet" href="doclist/css/transitions.css">
 	<script src="doclist/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
+
 <body class="dc-home">
 	<!--[if lt IE 8]>
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="doclist/http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
 	<!-- Preloader Start -->
-	<div class="preloader-outer">
+<!-- 	<div class="preloader-outer">
 		<div class="wt-preloader-holder">
 			<div class="wt-loader"></div>
 		</div>
-	</div>
+	</div> -->
 	<!-- Preloader End -->
 	<!-- Wrapper Start -->
 	<div id="dc-wrapper" class="dc-wrapper dc-haslayout">
@@ -99,25 +103,25 @@
 												<span>Login</span>
 												<a href="doclist/javascript:;"><i class="fa fa-times"></i></a>
 											</div>
-											<form class="dc-formtheme dc-loginform do-login-form">
+											<form method="POST" action="php/login.php" class="dc-formtheme dc-loginform do-login-form">
 												<fieldset>
 													<div class="form-group">
-														<input type="text" name="name" class="form-control" placeholder="Username">
+														<input type="email" required name="email" class="form-control" placeholder="Email">
 													</div>
 													<div class="form-group">
-														<input type="password" name="password" class="form-control" placeholder="Password">
+														<input type="password" required name="password" class="form-control" placeholder="Password">
 													</div>
 													<div class="dc-logininfo">
 														<span class="dc-checkbox">
 															<input id="dc-login" type="checkbox" name="rememberme">
 															<label for="dc-login">Keep me logged in</label>
 														</span>
-														<a href="doclist/javascript:;" class="dc-btn do-login-button">Login</a>
+														<button type="submit" name="btnlogin" class="dc-btn do-login-button">Login</button>
 													</div>
 												</fieldset>
 												<div class="dc-loginfooterinfo">
-													<a href="doclist/javascript:;" class="dc-forgot-password">Forgot password?</a>
-													<a href="doclist/javascript:void(0);">Create account</a>
+													<a href="javascript:;" class="dc-forgot-password">Forgot password?</a>
+													<a href="javascript:void(0);">Create account</a>
 												</div>
 											</form>
 										    <form class="dc-formtheme dc-loginform do-forgot-password-form dc-hide-form">
@@ -127,17 +131,17 @@
 										            </div>
 
 										            <div class="dc-logininfo">
-										                <a href="doclist/javascript:;" class="dc-btn do-get-password">Get Pasword</a>
+										                <a href="javascript:;" class="dc-btn do-get-password">Get Pasword</a>
 										            </div>     
 										        </fieldset>
 										        <div class="dc-loginfooterinfo">
-										            <a href="doclist/javascript:void(0);" class="dc-show-login">Login</a>
-										            <a href="doclist/javascript:void(0);">Create account</a>
+										            <a href="javascript:void(0);" class="dc-show-login">Login</a>
+										            <a href="javascript:void(0);">Create account</a>
 										        </div>
 										    </form>
 										</div>
 									</div>
-									<a href="doclist/register.html" class="dc-btn">Join Now</a>
+									<a href="signup.php" class="dc-btn">Join Now</a>
 								</div>
 							</div>
 						</div>
